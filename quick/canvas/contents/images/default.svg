@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" id="svg1306">
+  <defs id="defs1308">
+    <linearGradient id="linearGradient4083">
+      <stop id="stop4085" offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.75" id="stop4089" stop-color="#ffffff" stop-opacity="0"/>
+      <stop id="stop4087" offset="1" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4032">
+      <stop id="stop4034" offset="0" stop-color="#fff7c2" stop-opacity="0.63829786"/>
+      <stop offset="0.59394139" id="stop4036" stop-color="#fcaf3e" stop-opacity="0.18348624"/>
+      <stop id="stop4038" offset="0.83850551" stop-color="#fcaf3e" stop-opacity="0.50458717"/>
+      <stop id="stop4040" offset="1" stop-color="#fcaf3e" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4026">
+      <stop id="stop4028" offset="0" stop-color="#fff9c6" stop-opacity="1"/>
+      <stop offset="0.54166669" id="stop4042" stop-color="#fff28c" stop-opacity="1"/>
+      <stop id="stop4030" offset="1" stop-color="#ffea85" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient xlink:href="#linearGradient4026" id="linearGradient3168" gradientUnits="userSpaceOnUse" x1="-28.968945" y1="-25.326815" x2="-37.19698" y2="-9.5590506"/>
+    <radialGradient xlink:href="#linearGradient4032" id="radialGradient4020" cx="-33.519073" cy="-22.113297" fx="-33.519073" fy="-22.113297" r="9.5" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.487739,1.292402,-1.10267,0.497242,-41.77393,32.41492)"/>
+    <radialGradient xlink:href="#linearGradient4083" id="radialGradient4081" cx="23.99999" cy="23.381506" fx="23.99999" fy="23.381506" r="19.141981" gradientTransform="matrix(1.006701,2.235326e-16,-2.23715e-16,1.007522,-0.160816,0.426981)" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  
+  <metadata id="metadata1311">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title>weather-clear</dc:title>
+        <dc:date>January 2006</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Ryan Collier (pseudo)</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>http://www.tango-project.org</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:source>http://www.pseudocode.org</dc:source>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>weather</rdf:li>
+            <rdf:li>applet</rdf:li>
+            <rdf:li>notification</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/"/>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Garrett LeSage</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+        <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/ShareAlike"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g id="layer1">
+    <g>
+      <g opacity="0.7">
+        <path d="M 24 2.5 L 21.625 9.1875 C 22.399034 9.0641318 23.191406 9 24 9 C 24.808594 9 25.600966 9.0641317 26.375 9.1875 L 24 2.5 z M 8.8125 8.78125 L 11.84375 15.21875 C 12.779034 13.928569 13.928569 12.779034 15.21875 11.84375 L 8.8125 8.78125 z M 39.21875 8.78125 L 32.78125 11.84375 C 34.071431 12.779034 35.220966 13.928569 36.15625 15.21875 L 39.21875 8.78125 z M 9.1875 21.59375 L 2.5 23.96875 L 9.1875 26.34375 C 9.0673373 25.57952 9 24.797813 9 24 C 9 23.180625 9.0608858 22.377571 9.1875 21.59375 z M 38.8125 21.625 C 38.935868 22.399034 39 23.191406 39 24 C 39 24.808594 38.935868 25.600966 38.8125 26.375 L 45.5 24 L 38.8125 21.625 z M 11.84375 32.78125 L 8.8125 39.1875 L 15.21875 36.15625 C 13.928569 35.220966 12.779034 34.071431 11.84375 32.78125 z M 36.15625 32.78125 C 35.229789 34.05926 34.087617 35.194799 32.8125 36.125 L 39.21875 39.1875 L 36.15625 32.78125 z M 21.625 38.8125 L 24 45.5 L 26.375 38.8125 C 25.600966 38.935868 24.808594 39 24 39 C 23.191406 39 22.399034 38.935868 21.625 38.8125 z " fill="#fce94f" fill-opacity="1" stroke="#fcaf3e" stroke-width="0.73732895" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1"/>
+        <path d="M 24 5.25 L 22.65625 9.0625 C 23.098888 9.0231486 23.547187 9 24 9 C 24.452813 9 24.901112 9.0231486 25.34375 9.0625 L 24 5.25 z M 10.78125 10.75 L 12.5 14.375 C 13.071538 13.694089 13.724004 13.038745 14.40625 12.46875 L 10.78125 10.75 z M 37.25 10.75 L 33.625 12.46875 C 34.304675 13.038189 34.961811 13.695325 35.53125 14.375 L 37.25 10.75 z M 9.0625 22.625 L 5.28125 23.96875 L 9.0625 25.3125 C 9.024981 24.880146 9 24.442031 9 24 C 9 23.536406 9.0212735 23.077908 9.0625 22.625 z M 38.9375 22.65625 C 38.976851 23.098888 39 23.547187 39 24 C 39 24.452813 38.976851 24.901112 38.9375 25.34375 L 42.71875 24 L 38.9375 22.65625 z M 35.53125 33.59375 C 34.958293 34.27954 34.309985 34.957363 33.625 35.53125 L 37.25 37.25 L 35.53125 33.59375 z M 12.5 33.625 L 10.78125 37.21875 L 14.375 35.5 C 13.702932 34.935884 13.064116 34.297068 12.5 33.625 z M 22.65625 38.9375 L 24 42.71875 L 25.34375 38.9375 C 24.901112 38.976851 24.452813 39 24 39 C 23.547187 39 23.098888 38.976851 22.65625 38.9375 z " fill="none" fill-opacity="1" stroke="url(#radialGradient4081)" stroke-width="0.84646249" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1"/>
+      </g>
+      <g>
+        <g>
+          <path transform="matrix(0.778062,-1.061285,1.061287,0.778062,67.47952,3.641324)" d="M -22.5 -17.5 A 9.5 9.5 0 1 1  -41.5,-17.5 A 9.5 9.5 0 1 1  -22.5 -17.5 z" fill="#ffee54" fill-opacity="1" stroke="#fcaf3e" stroke-width="0.75991178" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1"/>
+          <path transform="matrix(1.244257,-0.167707,0.216642,1.251844,67.61648,40.527)" d="M -22.5 -17.5 A 9.5 9.5 0 1 1  -41.5,-17.5 A 9.5 9.5 0 1 1  -22.5 -17.5 z" fill="url(#radialGradient4020)" fill-opacity="1" stroke="none" stroke-width="1.01737845" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1"/>
+          <path transform="matrix(0.715791,-0.976349,0.97635,0.715792,64.00044,5.269544)" d="M -22.5 -17.5 A 9.5 9.5 0 1 1  -41.5,-17.5 A 9.5 9.5 0 1 1  -22.5 -17.5 z" fill="none" fill-opacity="1" stroke="url(#linearGradient3168)" stroke-width="0.82601947" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="4" stroke-dasharray="none" stroke-opacity="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

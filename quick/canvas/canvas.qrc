@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/canvas">
+        <file>canvas.qml</file>
+        <file>bezierCurve/bezierCurve.qml</file>
+        <file>clip/clip.qml</file>
+        <file>contents/Button.qml</file>
+        <file>contents/qt-logo.png</file>
+        <file>contents/ScrollBar.qml</file>
+        <file>contents/Slider.qml</file>
+        <file>contents/TitleBar.qml</file>
+        <file>contents/ToolBar.qml</file>
+        <file>contents/images/button-pressed.png</file>
+        <file>contents/images/button.png</file>
+        <file>contents/images/default.svg</file>
+        <file>contents/images/gloss.png</file>
+        <file>contents/images/lineedit.png</file>
+        <file>contents/images/lineedit.sci</file>
+        <file>contents/images/quit.png</file>
+        <file>contents/images/stripes.png</file>
+        <file>contents/images/titlebar.png</file>
+        <file>contents/images/titlebar.sci</file>
+        <file>contents/images/toolbutton.png</file>
+        <file>contents/images/toolbutton.sci</file>
+        <file>quadraticCurveTo/quadraticCurveTo.qml</file>
+        <file>roundedrect/roundedrect.qml</file>
+        <file>smile/smile.qml</file>
+        <file>squircle/squircle.png</file>
+        <file>squircle/squircle.qml</file>
+        <file>tiger/tiger.js</file>
+        <file>tiger/tiger.qml</file>
+    </qresource>
+</RCC>

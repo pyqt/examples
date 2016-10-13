@@ -1,0 +1,215 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Qt WebBrowser</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <layout class="QHBoxLayout" >
+    <property name="margin" >
+     <number>0</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="Frame3" >
+      <property name="frameShape" >
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QVBoxLayout" >
+       <property name="margin" >
+        <number>1</number>
+       </property>
+       <property name="spacing" >
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QAxWidget" name="WebBrowser" >
+         <property name="focusPolicy" >
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="control" >
+          <string notr="true">{8856F961-340A-11D0-A96B-00C04FD705A2}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="tbNavigate" >
+   <property name="windowTitle" >
+    <string>Navigation</string>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>4</number>
+   </attribute>
+   <addaction name="actionBack" />
+   <addaction name="actionForward" />
+   <addaction name="actionStop" />
+   <addaction name="actionRefresh" />
+   <addaction name="actionHome" />
+   <addaction name="separator" />
+   <addaction name="actionSearch" />
+  </widget>
+  <widget class="QToolBar" name="tbAddress" >
+   <property name="windowTitle" >
+    <string>Address</string>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>4</number>
+   </attribute>
+   <addaction name="actionGo" />
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>812</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="PopupMenu" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="FileNewGroup_2" >
+     <property name="title" >
+      <string>New</string>
+     </property>
+     <addaction name="actionNewWindow" />
+    </widget>
+    <addaction name="FileNewGroup" />
+    <addaction name="FileNewGroup_2" />
+    <addaction name="separator" />
+    <addaction name="actionFileClose" />
+   </widget>
+   <widget class="QMenu" name="unnamed" >
+    <property name="title" >
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout" />
+    <addaction name="actionAboutQt" />
+   </widget>
+   <addaction name="PopupMenu" />
+   <addaction name="unnamed" />
+  </widget>
+  <action name="actionGo" >
+   <property name="icon" >
+    <iconset resource="mainwindow.qrc" >:/icons/image0.xpm</iconset>
+   </property>
+   <property name="iconText" >
+    <string>Go</string>
+   </property>
+  </action>
+  <action name="actionBack" >
+   <property name="icon" >
+    <iconset resource="mainwindow.qrc" >:/icons/image1.xpm</iconset>
+   </property>
+   <property name="iconText" >
+    <string>Back</string>
+   </property>
+   <property name="shortcut" >
+    <string>Backspace</string>
+   </property>
+  </action>
+  <action name="actionForward" >
+   <property name="icon" >
+    <iconset resource="mainwindow.qrc" >:/icons/image2.xpm</iconset>
+   </property>
+   <property name="iconText" >
+    <string>Forward</string>
+   </property>
+  </action>
+  <action name="actionStop" >
+   <property name="icon" >
+    <iconset resource="mainwindow.qrc" >:/icons/image3.xpm</iconset>
+   </property>
+   <property name="iconText" >
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionRefresh" >
+   <property name="icon" >
+    <iconset resource="mainwindow.qrc" >:/icons/image4.xpm</iconset>
+   </property>
+   <property name="iconText" >
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="actionHome" >
+   <property name="icon" >
+    <iconset resource="mainwindow.qrc" >:/icons/image5.xpm</iconset>
+   </property>
+   <property name="iconText" >
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionFileClose" >
+   <property name="text" >
+    <string>C&amp;lose</string>
+   </property>
+   <property name="iconText" >
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionSearch" >
+   <property name="icon" >
+    <iconset resource="mainwindow.qrc" >:/icons/image6.xpm</iconset>
+   </property>
+   <property name="iconText" >
+    <string>Search</string>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="iconText" >
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAboutQt" >
+   <property name="iconText" >
+    <string>About Qt</string>
+   </property>
+  </action>
+  <actiongroup name="FileNewGroup" >
+   <action name="actionNewWindow" >
+    <property name="iconText" >
+     <string>Window</string>
+    </property>
+    <property name="shortcut" >
+     <string>Ctrl+N</string>
+    </property>
+   </action>
+  </actiongroup>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>QAxWidget</class>
+   <extends>QWidget</extends>
+   <header>qaxwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <connections/>
+</ui>

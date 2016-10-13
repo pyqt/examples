@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>icons/image0.xpm</file>
+        <file>icons/image1.xpm</file>
+        <file>icons/image2.xpm</file>
+        <file>icons/image3.xpm</file>
+        <file>icons/image4.xpm</file>
+        <file>icons/image5.xpm</file>
+        <file>icons/image6.xpm</file>
+    </qresource>
+</RCC>
