@@ -1,8 +1,6 @@
 # PyQt examples: Desktop GUIs based on PyQt5
 
-These PyQt examples teach you to create a desktop app with Python. Start with "Hello World" and work your way up to the official [demos](src/pyqt-official) that ship with PyQt.
-
-The screenshots below were taken on Ubuntu Linux. You can also use Windows or macOS.
+These PyQt examples teach you to create a desktop app with Python. Start with "[Hello World](src/01%20PyQt%20QLabel)" and work your way up to the [official demos that ship with PyQt](src/pyqt-official).
 
 | <a href="src/01 PyQt QLabel"><img src="src/01 PyQt QLabel/pyqt-qlabel.png" alt="PyQt QLabel" width=100px></a> | <a href="src/02 PyQt Widgets"><img src="src/02 PyQt Widgets/pyqt-widgets.png" alt="PyQt widgets screenshot" width=200px></a> | <a href="src/03 QVBoxLayout PyQt5"><img src="src/03 QVBoxLayout PyQt5/qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt5" width=100px></a> | <a href="src/04 PyQt Signals and Slots"><img src="src/04 PyQt Signals and Slots/pyqt-signals-and-slots.jpg" alt="PyQt Signals and Slots" width=170px></a> | <a href="src/05 Qt Designer Python"><img src="src/05 Qt Designer Python/qt-designer-windows.png" alt="Qt Designer Python" width=190px></a> |
 | :--: | :--: | :--: | :--: | :--: |
@@ -19,6 +17,8 @@ The screenshots below were taken on Ubuntu Linux. You can also use Windows or ma
 | <a href="src/14 QAbstractTableModel example"><img src="src/14 QAbstractTableModel example/qabstracttablemodel-example.png" alt="QAbstractTableModel example" height=120px></a> | <a href="src/15 PyQt database example"><img src="src/15 PyQt database example/pyqt-database-example.png" alt="QAbstractTableModel example" height=120px></a> |
 | :--: | :--: |
 | <a href="src/14 QAbstractTableModel example">Custom Tables</a> |  <a href="src/15 PyQt database example">PyQt database example</a> |
+
+The screenshots above were taken on Ubuntu Linux. You can also use Windows or macOS.
 
 ## Running the examples
 
