@@ -1,6 +1,8 @@
 # PyQt examples: Desktop GUIs based on PyQt5
 
-These PyQt examples teach you to create a desktop app with Python. Start with "[Hello World](src/01%20PyQt%20QLabel)" and work your way up to the [official demos that ship with PyQt](src/pyqt-official). Screenshots on Ubuntu below. You can also use Windows or macOS.
+These PyQt examples teach you to create a desktop app with Python. Start with "[Hello World](src/01%20PyQt%20QLabel)" and work your way up to the [official PyQt demos](src/pyqt-official). You can use Windows, Mac or Linux.
+
+## Examples from [Python and Qt: The Best Parts](https://build-system.fman.io/pyqt5-book)
 
 | <a href="src/01 PyQt QLabel"><img src="src/01 PyQt QLabel/pyqt-qlabel.png" alt="PyQt QLabel" width=100px></a> | <a href="src/02 PyQt Widgets"><img src="src/02 PyQt Widgets/pyqt-widgets.png" alt="PyQt widgets screenshot" width=200px></a> | <a href="src/03 QVBoxLayout PyQt5"><img src="src/03 QVBoxLayout PyQt5/qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt5" width=100px></a> | <a href="src/04 PyQt Signals and Slots"><img src="src/04 PyQt Signals and Slots/pyqt-signals-and-slots.jpg" alt="PyQt Signals and Slots" width=170px></a> | <a href="src/05 Qt Designer Python"><img src="src/05 Qt Designer Python/qt-designer-windows.png" alt="Qt Designer Python" width=190px></a> |
 | :--: | :--: | :--: | :--: | :--: |
@@ -18,7 +20,11 @@ These PyQt examples teach you to create a desktop app with Python. Start with "[
 | :--: | :--: |
 | <a href="src/14 QAbstractTableModel example">Custom Tables</a> |  <a href="src/15 PyQt database example">PyQt database example</a> |
 
-The screenshots above were taken on Ubuntu Linux. You can also use Windows or macOS.
+Except where otherwise indicated: The above examples are © Michael Herrmann. You may use their source code under the terms of the MIT license, and the screenshots under the terms of the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+## Official PyQt demos
+
+The [official PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/download5) also contains a large number of sample files. You can find them reproduced here in the [`src/pyqt-official`](src/pyqt-official) directory. They are licensed under the [GPL](src/pyqt-official/LICENSE). Screenshots to follow.
 
 ## Running the examples
 
@@ -62,7 +68,3 @@ This repository uses PyQt5 to use Qt from Python. Another, alternative binding i
 If you want to use PySide2 instead of PyQt5, simply replace all mentions of the latter by the former. For instance, in [`src/requirements.txt`](src/requirements.txt), replace `PyQt5` by `PySide2`. Similarly for any code examples: `from PyQt5.QtWidgets ...` becomes `from PySide2.QtWidgets ...` etc.
 
 Alternatively, if you don't want to commit to either of the two bindings at this stage, you can also use [Qt.py](https://github.com/mottosso/Qt.py). This is an abstraction over PySide2 and PyQt5. It loads whichever of the two bindings is available. To use it for the examples presented here, replace all mentions of `PyQt5` by just `Qt`.
-
-## License
-
-Except where otherwise indicated, the contents here are © me, Michael Herrmann. I'm happy for you to use the source code under the terms of the MIT license. The screenshots may be used under the terms of the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
