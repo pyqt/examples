@@ -22,7 +22,7 @@ The above examples are from the book [Python and Qt: The Best Parts](https://bui
 
 ## Official PyQt demos
 
-The [official PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/download5) also contains a large number of sample files. You can find them reproduced here in the [`src/pyqt-official`](src/pyqt-official) directory. They are licensed under the [GPL](src/pyqt-official/LICENSE). Screenshots to follow.
+The [PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/download5) also contains a large number of sample files. You can find them reproduced here in the [`src/pyqt-official`](src/pyqt-official) directory. They are licensed under the [GPL](src/pyqt-official/LICENSE). Screenshots to follow.
 
 ## Running the examples
 
