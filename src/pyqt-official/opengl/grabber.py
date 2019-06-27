@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2015 Riverbank Computing Limited.
+## Copyright (C) 2018 Riverbank Computing Limited.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -46,7 +46,7 @@ import sys
 import math
 
 from PyQt5.QtCore import pyqtSignal, QSize, Qt, QTimer
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QOpenGLVersionProfile, QPixmap
 from PyQt5.QtWidgets import (QAction, QApplication, QGridLayout, QLabel,
         QLineEdit, QMainWindow, QMessageBox, QOpenGLWidget, QScrollArea,
         QSizePolicy, QSlider, QWidget)
@@ -97,7 +97,9 @@ class GLWidget(QOpenGLWidget):
             self.update()
 
     def initializeGL(self):
-        self.gl = self.context().versionFunctions()
+        version_profile = QOpenGLVersionProfile()
+        version_profile.setVersion(2, 0)
+        self.gl = self.context().versionFunctions(version_profile)
         self.gl.initializeOpenGLFunctions()
 
         lightPos = (5.0, 5.0, 10.0, 1.0)

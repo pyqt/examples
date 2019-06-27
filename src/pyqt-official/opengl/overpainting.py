@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2015 Riverbank Computing Limited.
+## Copyright (C) 2018 Riverbank Computing Limited.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -47,8 +47,8 @@ import math, random
 
 from PyQt5.QtCore import (QPoint, QPointF, QRect, QRectF, QSize, Qt, QTime,
         QTimer)
-from PyQt5.QtGui import (QBrush, QColor, QFontMetrics, QImage, QPainter,
-        QRadialGradient, QSurfaceFormat)
+from PyQt5.QtGui import (QBrush, QColor, QFontMetrics, QImage,
+        QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
 from PyQt5.QtWidgets import QApplication, QOpenGLWidget
 
 
@@ -157,7 +157,9 @@ class GLWidget(QOpenGLWidget):
             self.zRot = angle
 
     def initializeGL(self):
-        self.gl = self.context().versionFunctions()
+        version_profile = QOpenGLVersionProfile()
+        version_profile.setVersion(2, 0)
+        self.gl = self.context().versionFunctions(version_profile)
         self.gl.initializeOpenGLFunctions()
 
         self.object = self.makeObject()

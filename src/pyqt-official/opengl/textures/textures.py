@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2015 Riverbank Computing Limited.
+## Copyright (C) 2018 Riverbank Computing Limited.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -46,7 +46,8 @@ import sys
 
 from PyQt5.QtCore import pyqtSignal, QFileInfo, QPoint, QSize, Qt, QTimer
 from PyQt5.QtGui import (QColor, QImage, QMatrix4x4, QOpenGLShader,
-        QOpenGLShaderProgram, QOpenGLTexture, QSurfaceFormat)
+        QOpenGLShaderProgram, QOpenGLTexture, QOpenGLVersionProfile,
+        QSurfaceFormat)
 from PyQt5.QtWidgets import QApplication, QGridLayout, QOpenGLWidget, QWidget
 
 
@@ -114,7 +115,9 @@ void main(void)
         self.update()
 
     def initializeGL(self):
-        self.gl = self.context().versionFunctions()
+        version_profile = QOpenGLVersionProfile()
+        version_profile.setVersion(2, 0)
+        self.gl = self.context().versionFunctions(version_profile)
         self.gl.initializeOpenGLFunctions()
 
         self.makeObject()

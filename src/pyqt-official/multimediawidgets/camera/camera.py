@@ -337,7 +337,7 @@ class Camera(QMainWindow):
             super(Camera, self).keyReleaseEvent(event)
 
     def updateRecordTime(self):
-        msg = "Recorded %d sec" % self.mediaRecorder.duration() // 1000
+        msg = "Recorded %d sec" % (self.mediaRecorder.duration() // 1000)
         self.ui.statusbar.showMessage(msg)
 
     def processCapturedImage(self, requestId, img):

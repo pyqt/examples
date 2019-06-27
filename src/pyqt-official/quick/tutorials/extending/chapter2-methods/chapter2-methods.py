@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited.
+## Copyright (C) 2018 Riverbank Computing Limited.
 ## Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
 ##
 ## This file is part of the examples of PyQt.
@@ -100,7 +100,8 @@ if __name__ == '__main__':
     view.setResizeMode(QQuickView.SizeRootObjectToView)
     view.setSource(
             QUrl.fromLocalFile(
-                    os.path.join(os.path.dirname(__file__),'app.qml')))
+                    os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            'app.qml')))
     view.show()
 
     sys.exit(app.exec_())

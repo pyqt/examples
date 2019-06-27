@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited.
+## Copyright (C) 2017 Riverbank Computing Limited.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -154,7 +154,7 @@ class TreeModel(QAbstractItemModel):
         if not index.isValid():
             return 0
 
-        return Qt.ItemIsEditable | Qt.ItemIsEnabled | Qt.ItemIsSelectable
+        return Qt.ItemIsEditable | super(TreeModel, self).flags(index)
 
     def getItem(self, index):
         if index.isValid():

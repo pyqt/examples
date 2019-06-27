@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited.
+## Copyright (C) 2017 Riverbank Computing Limited.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -45,7 +45,7 @@
 from PyQt5.QtCore import (QAbstractTableModel, QDir, QModelIndex, QRect,
         QRectF, QSize, Qt)
 from PyQt5.QtGui import QBrush, qGray, QImage, QPainter
-from PyQt5.QtPrintSupport import QPrinter
+from PyQt5.QtPrintSupport import QPrintDialog, QPrinter
 from PyQt5.QtWidgets import (QAbstractItemDelegate, QApplication, QDialog,
         QFileDialog, QHBoxLayout, QLabel, QMainWindow, QMessageBox, QMenu,
         QProgressDialog, QSpinBox, QStyle, QStyleOptionViewItem, QTableView,
@@ -243,8 +243,8 @@ class MainWindow(QMainWindow):
         yscale = printer.pageRect().height() / float(sourceHeight)
         scale = min(xscale, yscale)
 
-        painter.translate(printer.pageRect().x()+printer.pageRect().width()/2,
-                          printer.pageRect().y()+printer.pageRect().height()/2)
+        painter.translate(printer.paperRect().x()+printer.pageRect().width()/2,
+                          printer.paperRect().y()+printer.pageRect().height()/2)
         painter.scale(scale, scale)
         painter.translate(-sourceWidth/2, -sourceHeight/2)
 
@@ -252,6 +252,7 @@ class MainWindow(QMainWindow):
         parent = QModelIndex()
 
         progress = QProgressDialog("Printing...", "Cancel", 0, rows, self)
+        progress.setWindowModality(Qt.ApplicationModal)
         y = ItemSize / 2.0
 
         for row in range(rows):
@@ -264,11 +265,11 @@ class MainWindow(QMainWindow):
 
             for column in range(columns):
                 option.rect = QRect(x, y, ItemSize, ItemSize)
-                self.view.itemDelegate.paint(painter, option,
+                self.view.itemDelegate().paint(painter, option,
                         self.model.index(row, column, parent))
-                x = x + ItemSize
+                x += ItemSize
 
-            y = y + ItemSize
+            y += ItemSize
 
         progress.setValue(rows)
 

@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited.
+## Copyright (C) 2017 Riverbank Computing Limited.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -44,12 +44,14 @@
 
 from PyQt5.QtCore import QModelIndex, Qt
 from PyQt5.QtGui import QStandardItemModel
-from PyQt5.QtWidgets import QApplication, QItemDelegate, QSpinBox, QTableView
+from PyQt5.QtWidgets import (QApplication, QSpinBox, QStyledItemDelegate,
+        QTableView)
 
 
-class SpinBoxDelegate(QItemDelegate):
+class SpinBoxDelegate(QStyledItemDelegate):
     def createEditor(self, parent, option, index):
         editor = QSpinBox(parent)
+        editor.setFrame(False)
         editor.setMinimum(0)
         editor.setMaximum(100)
 

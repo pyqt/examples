@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited.
+## Copyright (C) 2018 Riverbank Computing Limited.
 ## Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
 ## Contact: http://www.qt-project.org/legal
 ##
@@ -46,7 +46,8 @@ import array
 
 from PyQt5.QtCore import QEvent
 from PyQt5.QtGui import (QGuiApplication, QMatrix4x4, QOpenGLContext,
-        QOpenGLShader, QOpenGLShaderProgram, QSurfaceFormat, QWindow)
+        QOpenGLShader, QOpenGLShaderProgram, QOpenGLVersionProfile,
+        QSurfaceFormat, QWindow)
 
 
 class OpenGLWindow(QWindow):
@@ -92,7 +93,9 @@ class OpenGLWindow(QWindow):
         self.m_context.makeCurrent(self)
 
         if needsInitialize:
-            self.m_gl = self.m_context.versionFunctions()
+            version_profile = QOpenGLVersionProfile()
+            version_profile.setVersion(2, 0)
+            self.m_gl = self.m_context.versionFunctions(version_profile)
             self.m_gl.initializeOpenGLFunctions()
 
             self.initialize()

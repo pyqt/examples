@@ -3,7 +3,8 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited.
+## Copyright (C) 2017 Riverbank Computing Limited.
+## Copyright (C) 2017 Hans-Peter Jansen <hpj@urpla.net>
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -44,22 +45,52 @@
 
 import sys
 
-from PyQt5.QtWidgets import QApplication, QFileSystemModel, QTreeView
+from PyQt5.QtCore import (QCommandLineOption, QCommandLineParser,
+        QCoreApplication, QDir, QT_VERSION_STR)
+from PyQt5.QtWidgets import (QApplication, QFileIconProvider, QFileSystemModel,
+        QTreeView)
 
 
 app = QApplication(sys.argv)
 
+QCoreApplication.setApplicationVersion(QT_VERSION_STR)
+parser = QCommandLineParser()
+parser.setApplicationDescription("Qt Dir View Example")
+parser.addHelpOption()
+parser.addVersionOption()
+
+dontUseCustomDirectoryIconsOption = QCommandLineOption('c',
+        "Set QFileIconProvider.DontUseCustomDirectoryIcons")
+parser.addOption(dontUseCustomDirectoryIconsOption)
+parser.addPositionalArgument('directory', "The directory to start in.")
+parser.process(app)
+try:
+    rootPath = parser.positionalArguments().pop(0)
+except IndexError:
+    rootPath = None
+
 model = QFileSystemModel()
 model.setRootPath('')
+if parser.isSet(dontUseCustomDirectoryIconsOption):
+    model.iconProvider().setOptions(
+            QFileIconProvider.DontUseCustomDirectoryIcons)
 tree = QTreeView()
 tree.setModel(model)
+if rootPath is not None:
+    rootIndex = model.index(QDir.cleanPath(rootPath))
+    if rootIndex.isValid():
+        tree.setRootIndex(rootIndex)
 
+# Demonstrating look and feel features.
 tree.setAnimated(False)
 tree.setIndentation(20)
 tree.setSortingEnabled(True)
 
+availableSize = QApplication.desktop().availableGeometry(tree).size()
+tree.resize(availableSize / 2)
+tree.setColumnWidth(0, tree.width() / 3)
+
 tree.setWindowTitle("Dir View")
-tree.resize(640, 480)
 tree.show()
 
 sys.exit(app.exec_())

@@ -129,7 +129,7 @@ class Dialog(QDialog):
         self.sharedMemory.lock()
 
         # Copy image data from buf into shared memory area.
-        self.sharedMemory.data()[:] = buf.data().data()
+        self.sharedMemory.data()[:size] = buf.data()[:size]
         self.sharedMemory.unlock()
 
     def loadFromMemory(self):

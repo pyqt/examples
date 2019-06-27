@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited.
+## Copyright (C) 2018 Riverbank Computing Limited.
 ## Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
 ##
 ## This file is part of the examples of PyQt.
@@ -41,7 +41,7 @@
 #############################################################################
 
 
-from PyQt5.QtCore import pyqtProperty, QRectF, QUrl
+from PyQt5.QtCore import pyqtProperty, pyqtSignal, QRectF, QUrl
 from PyQt5.QtGui import QColor, QGuiApplication, QPainter, QPen
 from PyQt5.QtQml import qmlRegisterType
 from PyQt5.QtQuick import QQuickPaintedItem, QQuickView
@@ -49,13 +49,18 @@ from PyQt5.QtQuick import QQuickPaintedItem, QQuickView
 
 class PieChart(QQuickPaintedItem):
 
-    @pyqtProperty(str)
+    nameChanged = pyqtSignal(str)
+
+    @pyqtProperty(str, notify=nameChanged)
     def name(self):
         return self._name
 
     @name.setter
     def name(self, name):
-        self._name = name
+        if self._name != name:
+            self._name = name
+            self.nameChanged.emit(name)
+            self.update()
 
     @pyqtProperty(QColor)
     def color(self):
@@ -91,7 +96,8 @@ if __name__ == '__main__':
     view.setResizeMode(QQuickView.SizeRootObjectToView)
     view.setSource(
             QUrl.fromLocalFile(
-                    os.path.join(os.path.dirname(__file__),'app.qml')))
+                    os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            'app.qml')))
     view.show()
 
     sys.exit(app.exec_())

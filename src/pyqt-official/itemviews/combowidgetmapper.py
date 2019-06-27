@@ -3,8 +3,8 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited
-## Copyright (C) 2010 Hans-Peter Jansen <hpj@urpla.net>.
+## Copyright (C) 2017 Riverbank Computing Limited
+## Copyright (C) 2017 Hans-Peter Jansen <hpj@urpla.net>.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -65,9 +65,11 @@ class Window(QWidget):
         typeComboBox = QComboBox()
         self.nextButton = QPushButton("&Next")
         self.previousButton = QPushButton("&Previous")
+
         nameLabel.setBuddy(nameEdit)
         addressLabel.setBuddy(addressEdit)
         typeLabel.setBuddy(typeComboBox)
+
         typeComboBox.setModel(self.typeModel)
 
         # Set up the mapper.
@@ -75,7 +77,7 @@ class Window(QWidget):
         self.mapper.setModel(self.model)
         self.mapper.addMapping(nameEdit, 0)
         self.mapper.addMapping(addressEdit, 1)
-        self.mapper.addMapping(typeComboBox, 2, 'currentIndex')
+        self.mapper.addMapping(typeComboBox, 2, b'currentIndex')
 
         # Set up connections and layouts.
         self.previousButton.clicked.connect(self.mapper.toPrevious)
@@ -112,12 +114,9 @@ class Window(QWidget):
         types = ("0", "1", "2", "0", "2")
         
         for row, name in enumerate(names):
-            item = QStandardItem(name)
-            self.model.setItem(row, 0, item)
-            item = QStandardItem(addresses[row])
-            self.model.setItem(row, 1, item)
-            item = QStandardItem(types[row])
-            self.model.setItem(row, 2, item)
+            self.model.setItem(row, 0, QStandardItem(name))
+            self.model.setItem(row, 1, QStandardItem(addresses[row]))
+            self.model.setItem(row, 2, QStandardItem(types[row]))
  
     def updateButtons(self, row):
         self.previousButton.setEnabled(row > 0)

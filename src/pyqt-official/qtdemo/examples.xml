@@ -82,8 +82,10 @@
     <example filename="coloreditorfactory" name="Color Editor Factory" image="coloreditorfactoryimage.png"/>
     <example filename="combowidgetmapper" name="Combo Widget Mapper" />
     <example filename="dirview" name="Directory View" />
-    <example filename="fetchmore" name="Fetch More" />
     <example filename="editabletreemodel" name="Editable Tree Model" />
+    <example filename="fetchmore" name="Fetch More" />
+    <example filename="frozencolumn" name="Frozen Column" />
+    <example filename="interview" name="Interview" />
     <example filename="pixelator" name="Pixelator" />
     <example filename="puzzle" name="Puzzle " image="itemviewspuzzle-example.png"/>
     <example filename="simpledommodel" name="Simple DOM Model" />
@@ -92,6 +94,7 @@
     <example filename="spinboxdelegate" name="Spin Box Delegate" />
     <example filename="spreadsheet" name="Spreadsheet"/>
     <example filename="stardelegate" name="Star Delegate" />
+    <example filename="storageview" name="Storage View" />
   </category>
   <category dirname="layouts" name="Layouts">
     <example filename="basiclayouts" name="Basic Layouts" />

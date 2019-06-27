@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2015 Riverbank Computing Limited.
+## Copyright (C) 2018 Riverbank Computing Limited.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -46,7 +46,7 @@ import sys
 import math
 
 from PyQt5.QtCore import pyqtSignal, QPoint, QSize, Qt
-from PyQt5.QtGui import QColor
+from PyQt5.QtGui import QColor, QOpenGLVersionProfile
 from PyQt5.QtWidgets import (QApplication, QHBoxLayout, QOpenGLWidget, QSlider,
         QWidget)
 
@@ -139,7 +139,9 @@ class GLWidget(QOpenGLWidget):
             self.update()
 
     def initializeGL(self):
-        self.gl = self.context().versionFunctions()
+        version_profile = QOpenGLVersionProfile()
+        version_profile.setVersion(2, 0)
+        self.gl = self.context().versionFunctions(version_profile)
         self.gl.initializeOpenGLFunctions()
 
         self.setClearColor(self.trolltechPurple.darker())

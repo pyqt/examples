@@ -3,7 +3,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2013 Riverbank Computing Limited.
+## Copyright (C) 2017 Riverbank Computing Limited.
 ## Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
 ## All rights reserved.
 ##
@@ -166,7 +166,8 @@ class PieView(QAbstractItemView):
         else:
             valueIndex = index
 
-        if self.model().data(valueIndex) > 0.0:
+        value = self.model().data(valueIndex)
+        if value is not None and value > 0.0:
 
             listItem = 0
             for row in range(index.row()-1, -1, -1):
@@ -406,7 +407,7 @@ class PieView(QAbstractItemView):
             for column in range(columns):
                 index = self.model().index(row, column, self.rootIndex())
                 region = self.itemRegion(index)
-                if not region.intersect(QRegion(contentsRect)).isEmpty():
+                if region.intersects(QRegion(contentsRect)):
                     indexes.append(index)
 
         if len(indexes) > 0:
@@ -558,15 +559,21 @@ class MainWindow(QMainWindow):
                 for row in range(self.model.rowCount(QModelIndex())):
                     pieces = []
 
-                    pieces.append(self.model.data(self.model.index(row, 0, QModelIndex()),
-                            Qt.DisplayRole))
-                    pieces.append(str(self.model.data(self.model.index(row, 1, QModelIndex()),
-                            Qt.DisplayRole)))
-                    pieces.append(self.model.data(self.model.index(row, 0, QModelIndex()),
-                            Qt.DecorationRole).name())
+                    pieces.append(
+                            self.model.data(
+                                    self.model.index(row, 0, QModelIndex()),
+                                    Qt.DisplayRole))
+                    pieces.append(
+                            '%g' % self.model.data(
+                                    self.model.index(row, 1, QModelIndex()),
+                                    Qt.DisplayRole))
+                    pieces.append(
+                            self.model.data(
+                                    self.model.index(row, 0, QModelIndex()),
+                                    Qt.DecorationRole).name())
 
-                    f.write(QByteArray(','.join(pieces)))
-                    f.write('\n')
+                    f.write(b','.join([p.encode('utf-8') for p in pieces]))
+                    f.write(b'\n')
 
             f.close()
             self.statusBar().showMessage("Saved %s" % fileName, 2000)
