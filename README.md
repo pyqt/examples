@@ -2,8 +2,6 @@
 
 These PyQt examples teach you to create a desktop app with Python. Start with "[Hello World](src/01%20PyQt%20QLabel)" and work your way up to the [official PyQt demos](src/pyqt-official). You can use Windows, Mac or Linux.
 
-## Examples from [Python and Qt: The Best Parts](https://build-system.fman.io/pyqt5-book)
-
 | <a href="src/01 PyQt QLabel"><img src="src/01 PyQt QLabel/pyqt-qlabel.png" alt="PyQt QLabel" width=100px></a> | <a href="src/02 PyQt Widgets"><img src="src/02 PyQt Widgets/pyqt-widgets.png" alt="PyQt widgets screenshot" width=200px></a> | <a href="src/03 QVBoxLayout PyQt5"><img src="src/03 QVBoxLayout PyQt5/qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt5" width=100px></a> | <a href="src/04 PyQt Signals and Slots"><img src="src/04 PyQt Signals and Slots/pyqt-signals-and-slots.jpg" alt="PyQt Signals and Slots" width=170px></a> | <a href="src/05 Qt Designer Python"><img src="src/05 Qt Designer Python/qt-designer-windows.png" alt="Qt Designer Python" width=190px></a> |
 | :--: | :--: | :--: | :--: | :--: |
 | <a href="src/01 PyQt QLabel">Hello World!</a> | <a href="src/02 PyQt Widgets">Common PyQt Widgets</a> | <a href="src/03 QVBoxLayout PyQt5">Layouts</a> | <a href="src/04 PyQt Signals and Slots">Signals and Slots</a> | <a href="src/04 Qt Designer Python">Qt Designer & Python</a> |
@@ -20,7 +18,7 @@ These PyQt examples teach you to create a desktop app with Python. Start with "[
 | :--: | :--: |
 | <a href="src/14 QAbstractTableModel example">Custom Tables</a> |  <a href="src/15 PyQt database example">PyQt database example</a> |
 
-Except where otherwise indicated: The above examples are © Michael Herrmann. You may use their source code under the terms of the MIT license, and the screenshots under the terms of the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The above examples are from the book [Python and Qt: The Best Parts](https://build-system.fman.io/pyqt5-book) by Michael Herrmann. Except where otherwise indicated, you may use their source code under the terms of the MIT license, and the screenshots under the terms of the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Official PyQt demos
 
