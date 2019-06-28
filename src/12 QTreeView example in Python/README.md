@@ -20,4 +20,4 @@ The nice thing about the Model/View distinction is that it lets you visualize th
 
 The next example, [PyQt5 QListview](../13%20PyQt5%20QListView), shows another way of using `QListView`.
 
-To run this example yourself, please follow [the instructions in the README of this repository](https://github.com/1mh/pyqt-examples#running-the-examples).
+To run this example yourself, please follow [the instructions in the README of this repository](https://github.com/pyqt/examples#running-the-examples).

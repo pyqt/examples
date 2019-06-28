@@ -18,4 +18,4 @@ As you can see in [`main.py`](main.py), this example uses `QApplication.setStyle
 
 The rest of the code is the same as for the [original version of the text editor](../07%20Qt%20Text%20Editor).
 
-To run this example yourself, please follow the [instructions in the README of this repository](https://github.com/1mh/pyqt-examples#running-the-examples).
+To run this example yourself, please follow the [instructions in the README of this repository](https://github.com/pyqt/examples#running-the-examples).

@@ -44,4 +44,4 @@ We've now connected the necessary components for displaying the user interface g
     window.show()
     app.exec_()
 
-For instructions how to run this example yourself, please see [here](https://github.com/1mh/pyqt-examples#running-the-examples).
+For instructions how to run this example yourself, please see [here](https://github.com/pyqt/examples#running-the-examples).

@@ -38,7 +38,7 @@ Because we didn't create the `QApplication` ourselves, we finally use the follow
 
     appctxt.app.exec_()
 
-To run this example yourself, you need fbs installed as per the instructions [here](https://github.com/1mh/pyqt-examples#running-the-examples). Then, you can do use the following command to run the text editor:
+To run this example yourself, you need fbs installed as per the instructions [here](https://github.com/pyqt/examples#running-the-examples). Then, you can do use the following command to run the text editor:
 
     fbs run
 

@@ -53,6 +53,6 @@ engine.load("main.qml")
 app.exec_()
 ```
 
-If you'd like further instructions how you can run this code for yourself, please see [here](https://github.com/1mh/pyqt-examples#running-the-examples).
+If you'd like further instructions how you can run this code for yourself, please see [here](https://github.com/pyqt/examples#running-the-examples).
 
 Some code in this directory has special license requirements. For more information, please see [`LICENSE.md`](LICENSE.md).

@@ -15,4 +15,4 @@ view.show()
 
 This is very similar to the [previous example](../12%20QTreeView%20example%20in%20Python), where we displayed a tree view of files. The reason for this similarity is that both examples use Qt's Model/View framework. As an exercise for yourself, you might want to try using `QListView` instead of `QTreeView` in the previous example.
 
-To run this example, please follow [the instructions in the README of this repository](https://github.com/1mh/pyqt-examples#running-the-examples).
+To run this example, please follow [the instructions in the README of this repository](https://github.com/pyqt/examples#running-the-examples).

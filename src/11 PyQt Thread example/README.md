@@ -4,7 +4,7 @@ This example shows how you can use threads to make your PyQt application more re
 
 <p align="center"><img src="../screenshots/pyqt-thread-example.png" alt="PyQt Thread Example"></p>
 
-To run this example, please follow [the instructions in the README of this repository](https://github.com/1mh/pyqt-examples#running-the-examples). Instead of `python main.py`, use `python` to execute one of the scripts described below. Eg. `python 01_single_threaded.py`.
+To run this example, please follow [the instructions in the README of this repository](https://github.com/pyqt/examples#running-the-examples). Instead of `python main.py`, use `python` to execute one of the scripts described below. Eg. `python 01_single_threaded.py`.
 
 To demonstrate the utility of threads, this directory contains multiple implementations of the chat client:
 
