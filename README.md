@@ -29,7 +29,7 @@ The [PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/downl
 
 This starts the PyQt example launcher:
 
-<center><img src="src/screenshots/pyqt-examples-launcher.png" alt="PyQt Examples launcher" style="max-width: 500px"></center>
+<p align="center"><img src="src/screenshots/pyqt-examples-launcher.png" alt="PyQt Examples launcher"></p>
 
 ## Running the examples
 
