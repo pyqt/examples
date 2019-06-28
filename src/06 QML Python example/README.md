@@ -4,7 +4,7 @@ Qt can be broadly split into two technologies: _Qt Widgets_ is the old core. It 
 
 Qt Quick uses a markup language called QML. This example shows how you can combine QML with Python.
 
-<p align="center"><img src="qml-python-example.png" alt="QML Python Example"></p>
+<p align="center"><img src="../screenshots/qml-python-example.png" alt="QML Python Example"></p>
 
 The sample application displays a pin wheel in front of some hills. When you click with the mouse, the wheel rotates.
 
