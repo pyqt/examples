@@ -18,7 +18,7 @@ These PyQt examples teach you to create a desktop app with Python. Start with "[
 | :--: | :--: |
 | <a href="src/14 QAbstractTableModel example">Custom Tables</a> |  <a href="src/15 PyQt database example">PyQt database example</a> |
 
-The above examples are from the book [Python and Qt: The Best Parts](https://build-system.fman.io/pyqt5-book) by Michael Herrmann. Except where otherwise indicated, you may use their source code under the terms of the MIT license, and the screenshots under the terms of the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The above examples are from the book [Python and Qt: The Best Parts](https://build-system.fman.io/pyqt5-book) by Michael Herrmann. 
 
 ## Official PyQt demos
 
@@ -66,3 +66,11 @@ This repository uses PyQt5 to use Qt from Python. Another, alternative binding i
 If you want to use PySide2 instead of PyQt5, simply replace all mentions of the latter by the former. For instance, in [`src/requirements.txt`](src/requirements.txt), replace `PyQt5` by `PySide2`. Similarly for any code examples: `from PyQt5.QtWidgets ...` becomes `from PySide2.QtWidgets ...` etc.
 
 Alternatively, if you don't want to commit to either of the two bindings at this stage, you can also use [Qt.py](https://github.com/mottosso/Qt.py). This is an abstraction over PySide2 and PyQt5. It loads whichever of the two bindings is available. To use it for the examples presented here, replace all mentions of `PyQt5` by just `Qt`.
+
+## Licensing
+
+Except where otherwise indicated, you may use the source code of examples 1 - 15 in the [`src/` directory](src) under the terms of the MIT or GPLv3 licenses.
+
+The official PyQt demos in [`src/pyqt-official`](src/pyqt-official) are [licensed under the GPL](src/pyqt-official/LICENSE).
+
+The screenshots in this repository may be used under the terms of the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) if you prominently mention and link to [Michael Herrmann's PyQt5 book](https://build-system.fman.io/pyqt5-book). 
