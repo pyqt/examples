@@ -2,7 +2,7 @@
 
 PyQt Signals let you react to user input such as mouse clicks. A *slot* is a function that gets called when such an event occurs. The file [`main.py`](main.py) in this directory shows this in action: When the user clicks a button, a popup appears:
 
-<p align="center"><img src="pyqt-signals-and-slots.jpg" alt="PyQt Signals and Slots"></p>
+<p align="center"><img src="../screenshots/pyqt-signals-and-slots.jpg" alt="PyQt Signals and Slots"></p>
 
 The code begins in the usual way. First, we import PyQt5 and create a `QApplication`:
 
