@@ -22,7 +22,14 @@ The above examples are from the book [Python and Qt: The Best Parts](https://bui
 
 ## Official PyQt demos
 
-The [PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/download5) also contains a large number of sample files. You can find them reproduced here in the [`src/pyqt-official`](src/pyqt-official) directory. They are [licensed under the GPL](src/pyqt-official/LICENSE). Screenshots to follow.
+The [PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/download5) also contains a large number of sample files. You can find them reproduced here in the [`src/pyqt-official`](src/pyqt-official) directory. The easiest way to browse them is to follow the [instructions about running examples](#running-the-examples) below, then execute the following commands:
+
+    cd src/pyqt-official/qtdemo
+    python qtdemo.py
+
+This starts the PyQt example launcher:
+
+<center><img src="src/screenshots/pyqt-examples-launcher.png" alt="PyQt Examples launcher" style="max-width: 500px"></center>
 
 ## Running the examples
 
