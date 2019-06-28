@@ -22,7 +22,7 @@ The above examples are from the book [Python and Qt: The Best Parts](https://bui
 
 ## Official PyQt demos
 
-The [PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/download5) also contains a large number of sample files. You can find them reproduced here in the [`src/pyqt-official`](src/pyqt-official) directory. The easiest way to browse them is to follow the [instructions about running examples](#running-the-examples) below, then execute the following commands:
+The [PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/download5) also contains a large number of sample files. You can find them reproduced here in the [`src/pyqt-official`](src/pyqt-official) directory. The easiest way to start them is to follow the [instructions about running examples](#running-the-examples) below, then execute the following commands:
 
     cd src/pyqt-official/qtdemo
     python qtdemo.py
@@ -30,6 +30,8 @@ The [PyQt source archive](https://www.riverbankcomputing.com/software/pyqt/downl
 This starts the PyQt example launcher:
 
 <p align="center"><img src="src/screenshots/pyqt-examples-launcher.png" alt="PyQt Examples launcher"></p>
+
+You can use it to easily browse and run the official demo applications. For instance, the _Quick_/_Animation_/_ColorAnimation_, _Graphics Effects_/_Lighting and Shadows_, _Desktop_/ and _Widgets_/_Tetrix_ examples are quite nice.
 
 ## Running the examples
 
