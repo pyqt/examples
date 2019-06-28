@@ -2,7 +2,7 @@
 
 A _tree view_ is what's classicaly used to display files and folders: A hierarchical structure where items can be expanded. This example application shows how PyQt5's [`QTreeView`](https://doc.qt.io/qt-5/qtreeview.html) can be used to display your local files.
 
-<p align="center"><img src="qtreeview-example-in-python.png" alt="QTreeView example in Python"></p>
+<p align="center"><img src="../screenshots/qtreeview-example-in-python.png" alt="QTreeView example in Python"></p>
 
 As for the other examples in this repository, the code lies in [`main.py`](main.py). The important steps are:
 
