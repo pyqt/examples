@@ -2,7 +2,7 @@
 
 Layouts let you position GUI elements next to each other. [`QVBoxLayout`](https://doc.qt.io/qt-5/qvboxlayout.html) for instance arranges items vertically:
 
-<p align="center"><img src="qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt5"></p>
+<p align="center"><img src="../screenshots/qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt5"></p>
 
 The [source code for this example](main.py) is not much more complex than for our [Hello World app](../01%20PyQt%20QLabel). First, we import PyQt5:
 
