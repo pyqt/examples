@@ -20,7 +20,7 @@ We no longer need to create a `QApplication`. This is done automatically by fbs.
 
 The editor's _About_ dialog shows an icon:
 
-![QDialog example](../07%20Qt%20Text%20Editor/screenshots/qdialog-example.png)
+![QDialog example](../screenshots/qdialog-example.png)
 
 This is done in the original code as follows:
 

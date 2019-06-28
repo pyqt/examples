@@ -2,11 +2,11 @@
 
 This example implements a simple text editor with (Py)Qt.
 
-![Qt Text Editor](screenshots/qt-text-editor-windows.png) ![QMenu example](screenshots/qmenu-example.png)
+![Qt Text Editor](../screenshots/qt-text-editor-windows.png) ![QMenu example](../screenshots/qmenu-example.png)
 
-![Qt QMenu](screenshots/qt-qmenu.png) ![QDialog example](screenshots/qdialog-example.png)
+![Qt QMenu](../screenshots/qt-qmenu.png) ![QDialog example](../screenshots/qdialog-example.png)
 
-![QMessageBox example](screenshots/qmessagebox-example.png)
+![QMessageBox example](../screenshots/qmessagebox-example.png)
 
 It has a surprising number of features:
 
