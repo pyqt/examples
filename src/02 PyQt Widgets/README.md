@@ -2,7 +2,7 @@
 
 A *widget* is a GUI element: A button, a text field, ... The sample application in this directory shows the most common PyQt widgets:
 
-![PyQt widgets screenshot](pyqt-widgets.png)
+![PyQt widgets screenshot](../screenshots/pyqt-widgets.png)
 
 If you know HTML: Widgets are a little like HTML elements. They can be nested, and have a different appearance and behavior depending on their type. (Eg. a link `<a>` looks and behaves differently from an image `<img>`.)
 
