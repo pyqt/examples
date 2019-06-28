@@ -1,7 +1,5 @@
 # PyQt examples: Learn to write desktop apps
 
-These PyQt examples show how you can create a desktop app with Python and Qt. Start with "[Hello World](src/01%20PyQt%20QLabel)" or jump straight to the [official PyQt demos](#official-pyqt-demos). You can use Windows, Mac or Linux.
-
 | <a href="src/01 PyQt QLabel"><img src="src/screenshots/pyqt-qlabel.png" alt="PyQt QLabel" width=100px></a> | <a href="src/02 PyQt Widgets"><img src="src/screenshots/pyqt-widgets.png" alt="PyQt widgets screenshot" width=200px></a> | <a href="src/03 QVBoxLayout PyQt5"><img src="src/screenshots/qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt5" width=100px></a> | <a href="src/04 PyQt Signals and Slots"><img src="src/screenshots/pyqt-signals-and-slots.jpg" alt="PyQt Signals and Slots" width=170px></a> | <a href="src/05 Qt Designer Python"><img src="src/screenshots/qt-designer-windows.png" alt="Qt Designer Python" width=190px></a> |
 | :--: | :--: | :--: | :--: | :--: |
 | <a href="src/01 PyQt QLabel">Hello World!</a> | <a href="src/02 PyQt Widgets">Common PyQt Widgets</a> | <a href="src/03 QVBoxLayout PyQt5">Layouts</a> | <a href="src/04 PyQt Signals and Slots">Signals and Slots</a> | <a href="src/04 Qt Designer Python">Qt Designer & Python</a> |
