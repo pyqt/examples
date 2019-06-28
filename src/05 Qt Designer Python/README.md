@@ -2,13 +2,13 @@
 
 [Qt Designer](https://build-system.fman.io/qt-designer-download) is a graphical tool for building Qt GUIs:
 
-<p align="center"><img src="qt-designer-windows.png" alt="Qt Designer screenshot on Windows"></p>
+<p align="center"><img src="../screenshots/qt-designer-windows.png" alt="Qt Designer screenshot on Windows"></p>
 
 It produces `.ui` files. You can load these files from C++ or Python to display the GUI.
 
 The dialog in the following screenshot comes from the file [`dialog.ui`](dialog.ui) in this directory:
 
-<p align="center"><img src="qt-designer-python.png" alt="Qt Designer Python"></p>
+<p align="center"><img src="../screenshots/qt-designer-python.png" alt="Qt Designer Python"></p>
 
 The [`main.py`](main.py) script (also in this directory) loads and invokes `dialog.ui` from Python. The steps with which it does this are quite easy.
 
