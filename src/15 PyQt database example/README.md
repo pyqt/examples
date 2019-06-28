@@ -2,7 +2,7 @@
 
 This example shows how you can connect to a database from a PyQt application. 
 
-<p align="center"><img src="pyqt-database-example.png" alt="PyQt database example"></p>
+<p align="center"><img src="../screenshots/pyqt-database-example.png" alt="PyQt database example"></p>
 
 The screenshot shows a table of project data that comes from a SQL database. One of the projects is real ;-) (Though the income is made up.)
 
