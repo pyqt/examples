@@ -2,7 +2,7 @@
 
 This example shows how you can create a Hello World app using PyQt. It uses a [`QLabel`](https://doc.qt.io/qt-5/qlabel.html) to display a simple window:
 
-![PyQt QLabel screenshot](pyqt-qlabel.png)
+![PyQt QLabel screenshot](../screenshots/pyqt-qlabel.png)
 
 ```
 from PyQt5.QtWidgets import *
