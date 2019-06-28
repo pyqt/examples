@@ -31,7 +31,13 @@ This starts the PyQt example launcher:
 
 <p align="center"><img src="src/screenshots/pyqt-examples-launcher.png" alt="PyQt Examples launcher"></p>
 
-You can use it to easily browse and run the official demo applications. For instance, the _Quick_/_Animation_/_ColorAnimation_, _Graphics Effects_/_Lighting and Shadows_, _Desktop_/ and _Widgets_/_Tetrix_ examples are quite nice.
+You can use it to easily browse and run the official demo applications. The following examples are quite nice for instance:
+
+ * Quick / Animation / ColorAnimation
+ * Graphics Effects / Lighting and Shadows
+ * Desktop / System Tray
+ * Desktop / Screenshot
+ * Widgets / Tetrix
 
 ## Running the examples
 
