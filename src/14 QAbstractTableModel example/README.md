@@ -2,7 +2,7 @@
 
 This [`QAbstractTableModel`](https://doc.qt.io/qt-5/qabstracttablemodel.html) example shows how you can define a custom Qt _model_ to display tabular data.
 
-<p align="center"><img src="qabstracttablemodel-example.png" alt="QAbstractTableModel example"></p>
+<p align="center"><img src="../screenshots/qabstracttablemodel-example.png" alt="QAbstractTableModel example"></p>
 
 The data is a table of famous scientists. In Python, it can be written as follows:
 

@@ -14,7 +14,7 @@ These PyQt examples teach you to create a desktop app with Python. Start with "[
 | :--: | :--: | :--: | :--: |
 | <a href="src/10 QPainter Python example">Action Shooter</a> | <a href="src/11 PyQt Thread example">Chat Client</a> | <a href="src/12 QTreeView example in Python">Tree Views</a> | <a href="src/13 PyQt5 QListView">Lists</a> |
 
-| <a href="src/14 QAbstractTableModel example"><img src="src/14 QAbstractTableModel example/qabstracttablemodel-example.png" alt="QAbstractTableModel example" height=120px></a> | <a href="src/15 PyQt database example"><img src="src/15 PyQt database example/pyqt-database-example.png" alt="QAbstractTableModel example" height=120px></a> |
+| <a href="src/14 QAbstractTableModel example"><img src="src/screenshots/qabstracttablemodel-example.png" alt="QAbstractTableModel example" height=120px></a> | <a href="src/15 PyQt database example"><img src="src/15 PyQt database example/pyqt-database-example.png" alt="QAbstractTableModel example" height=120px></a> |
 | :--: | :--: |
 | <a href="src/14 QAbstractTableModel example">Custom Tables</a> |  <a href="src/15 PyQt database example">PyQt database example</a> |
 
