@@ -36,6 +36,6 @@ We conclude by showing the window and (as is required) handing control over to Q
     window.show()
     app.exec_()
 
-For instructions how you can run this example yourself, please see [here](https://github.com/pyqt/examples#running-the-examples).
+For instructions how you can run this example yourself, please see [here](../../README.md#running-the-examples).
 
 The related [`QHBoxLayout`](https://doc.qt.io/qt-5/qhboxlayout.html) positions items horizontally. For an even more powerful approach, see [`QGridLayout`](https://doc.qt.io/qt-5/qgridlayout.html).

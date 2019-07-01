@@ -15,4 +15,4 @@ It has a surprising number of features:
  * An *About* dialog.
  * A warning *Do you want to save before quitting?* if there are unmodified changes.
 
-The full source code is in [`main.py`](main.py). For instructions on how to run it, please see [here](https://github.com/pyqt/examples#running-the-examples).
+The full source code is in [`main.py`](main.py). For instructions on how to run it, please see [here](../../README.md#running-the-examples).

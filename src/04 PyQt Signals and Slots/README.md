@@ -29,4 +29,4 @@ Finally, we show the button on the screen and hand control over to Qt:
     button.show()
     app.exec_()
 
-For instructions how you can run this example yourself, please see [here](https://github.com/pyqt/examples#running-the-examples).
+For instructions how you can run this example yourself, please see [here](../../README.md#running-the-examples).

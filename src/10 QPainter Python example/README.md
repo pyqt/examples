@@ -6,4 +6,4 @@ This example application demonstrates how you can use [`QPainter`](https://doc.q
 
 The crucial steps of this example are to [override `mousePressEvent(...)`](main.py#L13-L17) to handle the user's clicks, and [`paintEvent(...)`](main.py#L18-L22) to draw the bullets. See the top of [`main.py`](main.py) for how these features work in detail.
 
-To run this example yourself, please follow [these instructions](https://github.com/pyqt/examples#running-the-examples).
+To run this example yourself, please follow [these instructions](../../README.md#running-the-examples).

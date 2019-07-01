@@ -35,6 +35,6 @@ view.show()
 
 As in [previous examples](../12%20QTreeView%20example%20in%20Python), this uses Qt's Model/View framework to separate the two concerns of obtaining and displaying the data: We use `model` to load the database, and `view` to display it.
 
-To run this example yourself, first follow [these instructions](https://github.com/pyqt/examples#running-the-examples). Then invoke `python initdb.py` to initialize the database. After that, you can execute `python main.py` to start the sample application.
+To run this example yourself, first follow [these instructions](../../README.md#running-the-examples). Then invoke `python initdb.py` to initialize the database. After that, you can execute `python main.py` to start the sample application.
 
 While we use SQLite here, you can easily use other database systems as well. For instance, you could use PostgreSQL via the [psycopg2](http://initd.org/psycopg/) library.

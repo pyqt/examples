@@ -12,7 +12,7 @@ label.show()
 app.exec_()
 ```
 
-For instructions how you can run this code, please see the [top-level README](https://github.com/pyqt/examples#running-the-examples).
+For instructions how you can run this code, please see the [top-level README](../../README.md#running-the-examples).
 
 The code works as follows: First, we import the necessary PyQt classes via the statement:
 
