@@ -16,7 +16,15 @@
 | :--: | :--: |
 | <a href="src/14 QAbstractTableModel example">Custom Tables</a> |  <a href="src/15 PyQt database example">PyQt database example</a> |
 
-The above examples are from the book [Python and Qt: The Best Parts](https://build-system.fman.io/pyqt5-book) by Michael Herrmann. 
+These examples are taken from the following book:
+
+<p align="center">
+    <img src="https://build-system.fman.io/static/public/img/pyqt5-book.jpg" alt="PyQt5 book">
+    <br/>
+    <a href="https://build-system.fman.io/pyqt5-book">Python and Qt: The Best Parts</a>
+    <br/>
+    by Michael Herrmann
+</p>
 
 ## Official PyQt demos
 
