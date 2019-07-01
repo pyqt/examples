@@ -19,7 +19,7 @@
 These examples are taken from the following book:
 
 <p align="center">
-    <img src="https://build-system.fman.io/static/public/img/pyqt5-book.jpg" alt="PyQt5 book">
+    <a href="https://build-system.fman.io/pyqt5-book"><img src="https://build-system.fman.io/static/public/img/pyqt5-book.jpg" alt="PyQt5 book"></a>
     <br/>
     <a href="https://build-system.fman.io/pyqt5-book">Python and Qt: The Best Parts</a>
     <br/>
