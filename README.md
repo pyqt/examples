@@ -49,7 +49,7 @@ You can use it to easily browse and run the official demo applications. The foll
 
 Running the examples is really easy. The only thing you need is [Python 3](https://www.python.org/downloads/).
 
-First, download the [ZIP archive of this repository](https://github.com/pyqt/examples/archive/master.zip) and unpack it. Open a command prompt and use `cd` to navigate into the top-level directory of the archive.
+First, download the [ZIP archive of this repository](https://github.com/pyqt/examples/archive/_.zip) and unpack it. Open a command prompt and use `cd` to navigate into the top-level directory of the archive.
 
 Create a virtual environment via the command:
 
