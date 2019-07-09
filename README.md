@@ -1,4 +1,6 @@
-# PyQt examples 2019: Learn to create a desktop app
+# PyQt examples 2019
+
+These PyQt examples show you how to create a desktop app with Python and Qt. Start with "Hello World" or browse the official PyQt demos.
 
 | <a href="src/01 PyQt QLabel"><img src="src/screenshots/pyqt-qlabel.png" alt="PyQt QLabel" width=100px></a> | <a href="src/02 PyQt Widgets"><img src="src/screenshots/pyqt-widgets.png" alt="PyQt widgets screenshot" width=200px></a> | <a href="src/03 QVBoxLayout PyQt5"><img src="src/screenshots/qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt5" width=100px></a> | <a href="src/04 PyQt Signals and Slots"><img src="src/screenshots/pyqt-signals-and-slots.jpg" alt="PyQt Signals and Slots" width=170px></a> | <a href="src/05 Qt Designer Python"><img src="src/screenshots/qt-designer-windows.png" alt="Qt Designer Python" width=190px></a> |
 | :--: | :--: | :--: | :--: | :--: |
