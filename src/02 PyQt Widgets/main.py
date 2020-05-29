@@ -116,7 +116,7 @@ class WidgetGallery(QDialog):
     def advanceProgressBar(self):
         curVal = self.progressBar.value()
         maxVal = self.progressBar.maximum()
-        self.progressBar.setValue(curVal + (maxVal - curVal) / 100)
+        self.progressBar.setValue(curVal + (maxVal - curVal) // 100)
 
     def createTopLeftGroupBox(self):
         self.topLeftGroupBox = QGroupBox("Group 1")
