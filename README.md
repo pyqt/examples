@@ -63,7 +63,7 @@ To activate the virtual environment, use the following command:
 
 ```
 # On Windows:
-call venv\Scripts\actviate.bat
+call venv\Scripts\activate.bat
 # On Mac / Linux:
 source venv/bin/activate
 ```
