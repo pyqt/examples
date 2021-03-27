@@ -12,6 +12,8 @@ class MainWindow(QMainWindow):
         )
         if answer & QMessageBox.Save:
             save()
+            if text.document().isModified():
+                event.ignore()
         elif answer & QMessageBox.Cancel:
             e.ignore()
 
