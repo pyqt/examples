@@ -13,6 +13,9 @@ class MainWindow(QMainWindow):
         if answer & QMessageBox.Save:
             save()
             if text.document().isModified():
+            	# This happens when the user closes the Save As... dialog.
+            	# We do not want to close the window in this case because it
+            	# would throw away unsaved changes.
                 event.ignore()
         elif answer & QMessageBox.Cancel:
             e.ignore()
