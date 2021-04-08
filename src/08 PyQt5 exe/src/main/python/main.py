@@ -73,7 +73,7 @@ def show_about_dialog():
     text = "<center>" \
        "<h1>Text Editor</h1>" \
        "&#8291;" \
-       "<img src=%r>" \
+       "<img src=\"%s\">" \
        "</center>" \
        "<p>Version 31.4.159.265358<br/>" \
        "Copyright &copy; Company Inc.</p>" \
