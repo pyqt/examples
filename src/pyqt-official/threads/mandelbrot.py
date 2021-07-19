@@ -206,7 +206,7 @@ class RenderThread(QThread):
         g = pow(g * s, 0.8)
         b = pow(b * s, 0.8)
 
-        return qRgb(r*255, g*255, b*255)
+        return qRgb(int(r*255), int(g*255), int(b*255))
 
 
 class MandelbrotWidget(QWidget):
@@ -251,7 +251,7 @@ class MandelbrotWidget(QWidget):
             painter.save()
             painter.translate(newX, newY)
             painter.scale(scaleFactor, scaleFactor)
-            exposed, _ = painter.matrix().inverted()
+            exposed, _ = painter.transform().inverted()
             exposed = exposed.mapRect(self.rect()).adjusted(-1, -1, 1, 1)
             painter.drawPixmap(exposed, self.pixmap, exposed)
             painter.restore()
@@ -263,10 +263,10 @@ class MandelbrotWidget(QWidget):
 
         painter.setPen(Qt.NoPen)
         painter.setBrush(QColor(0, 0, 0, 127))
-        painter.drawRect((self.width() - textWidth) / 2 - 5, 0, textWidth + 10,
+        painter.drawRect((self.width() - textWidth) // 2 - 5, 0, textWidth + 10,
                 metrics.lineSpacing() + 5)
         painter.setPen(Qt.white)
-        painter.drawText((self.width() - textWidth) / 2,
+        painter.drawText((self.width() - textWidth) // 2,
                 metrics.leading() + metrics.ascent(), text)
 
     def resizeEvent(self, event):
