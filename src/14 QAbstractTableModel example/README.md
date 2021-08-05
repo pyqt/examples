@@ -35,7 +35,7 @@ class TableModel(QAbstractTableModel):
             return QVariant()
         # What's the value of the cell at the given index?
         return rows[index.row()][index.column()]
-    def headerData(self, section, orientation, role:
+    def headerData(self, section, orientation, role):
         if role != Qt.DisplayRole or orientation != Qt.Horizontal:
             return QVariant()
         # What's the header for the given column?
