@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
             	# This happens when the user closes the Save As... dialog.
             	# We do not want to close the window in this case because it
             	# would throw away unsaved changes.
-                event.ignore()
+                e.ignore()
         elif answer & QMessageBox.Cancel:
             e.ignore()
 
