@@ -5,18 +5,18 @@ This example shows how you can create a Hello World app using PyQt. It uses a [`
 ![PyQt QLabel screenshot](../screenshots/pyqt-qlabel.png)
 
 ```
-from PyQt5.QtWidgets import *
+from PyQt6.QtWidgets import *
 app = QApplication([])
 label = QLabel('Hello World!')
 label.show()
-app.exec_()
+app.exec()
 ```
 
 For instructions how you can run this code, please see the [top-level README](../../README.md#running-the-examples).
 
 The code works as follows: First, we import the necessary PyQt classes via the statement:
 
-    from PyQt5.QtWidgets import *
+    from PyQt6.QtWidgets import *
 
 Next, we create a [`QApplication`](https://doc.qt.io/Qt-5/qapplication.html). This is required in every PyQt app. In a sense, it initializes PyQt:
 
@@ -32,7 +32,7 @@ By calling `.show()` on a [widget](../02%20PyQt%20Widgets), we can spawn a windo
 
 Finally, we hand control over to Qt:
 
-    app.exec_()
+    app.exec()
 
 This too is required in every Qt application. It gives Qt a chance to run and process user input, such as for instance when the user clicks the "Window close" button.
 

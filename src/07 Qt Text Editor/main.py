@@ -1,5 +1,5 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QKeySequence
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import QKeySequence
 
 class MainWindow(QMainWindow):
     def closeEvent(self, e):
@@ -81,4 +81,4 @@ def show_about_dialog():
 about_action.triggered.connect(show_about_dialog)
 
 window.show()
-app.exec_()
+app.exec()

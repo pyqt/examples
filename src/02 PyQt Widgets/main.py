@@ -42,8 +42,8 @@
 #############################################################################
 
 
-from PyQt5.QtCore import QDateTime, Qt, QTimer
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
+from PyQt6.QtCore import QDateTime, Qt, QTimer
+from PyQt6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, QPushButton, QRadioButton, QScrollBar, QSizePolicy,
         QSlider, QSpinBox, QStyleFactory, QTableWidget, QTabWidget, QTextEdit,
@@ -240,4 +240,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     gallery = WidgetGallery()
     gallery.show()
-    sys.exit(app.exec_()) 
+    sys.exit(app.exec()) 

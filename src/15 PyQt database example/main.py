@@ -1,6 +1,6 @@
 from os.path import exists
-from PyQt5.QtWidgets import *
-from PyQt5.QtSql import *
+from PyQt6.QtWidgets import *
+from PyQt6.QtSql import *
 
 import sys
 
@@ -18,4 +18,4 @@ model.select()
 view = QTableView()
 view.setModel(model)
 view.show()
-app.exec_()
+app.exec()

@@ -1,5 +1,5 @@
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
+from PyQt6.QtCore import *
+from PyQt6.QtWidgets import *
 from requests import Session
 
 name = input("Please enter your name: ")
@@ -34,4 +34,4 @@ timer = QTimer()
 timer.timeout.connect(display_new_messages)
 timer.start(1000)
 
-app.exec_()
+app.exec()

@@ -12,15 +12,15 @@ The dialog in the following screenshot comes from the file [`dialog.ui`](dialog.
 
 The [`main.py`](main.py) script (also in this directory) loads and invokes `dialog.ui` from Python. The steps with which it does this are quite easy.
 
-First, [`main.py`](main.py) imports the `uic` module from PyQt5:
+First, [`main.py`](main.py) imports the `uic` module from PyQt6:
 
-    from PyQt5 import uic
+    from PyQt6 import uic
 
 It also imports `QApplication`. Like all (Py)Qt apps, we must create an instance of this class.
 
-    from PyQt5.QtWidgets import QApplication
+    from PyQt6.QtWidgets import QApplication
 
-Then, we use [`uic.loadUiType(...)`](https://www.riverbankcomputing.com/static/Docs/PyQt5/designer.html#PyQt5.uic.loadUiType) to load the `.ui` file. This returns two classes, which we call `Form` and `Window`:
+Then, we use [`uic.loadUiType(...)`](https://www.riverbankcomputing.com/static/Docs/PyQt6/designer.html#PyQt6.uic.loadUiType) to load the `.ui` file. This returns two classes, which we call `Form` and `Window`:
 
     Form, Window = uic.loadUiType("dialog.ui")
 
@@ -42,6 +42,6 @@ Next, we instantiate the `Form`. We invoke its `.setupUi(...)` method, passing t
 We've now connected the necessary components for displaying the user interface given in the `.ui` file. All that remains is to `.show()` the window and kick off Qt's event processing mechanism:
 
     window.show()
-    app.exec_()
+    app.exec()
 
 For instructions how to run this example yourself, please see [here](../../README.md#running-the-examples).

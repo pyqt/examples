@@ -44,13 +44,13 @@ Window {
 Executing the QML from Python is even easier. The code is in [`main.py`](main.py):
 
 ```
-from PyQt5.QtQml import QQmlApplicationEngine
-from PyQt5.QtWidgets import QApplication
+from PyQt6.QtQml import QQmlApplicationEngine
+from PyQt6.QtWidgets import QApplication
 
 app = QApplication([])
 engine = QQmlApplicationEngine()
 engine.load("main.qml")
-app.exec_()
+app.exec()
 ```
 
 If you'd like further instructions how you can run this code for yourself, please see [here](../../README.md#running-the-examples).

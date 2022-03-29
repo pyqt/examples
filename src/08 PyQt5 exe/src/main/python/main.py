@@ -1,12 +1,12 @@
-from fbs_runtime.application_context.PyQt5 import ApplicationContext
-from PyQt5.QtWidgets import QMainWindow
+from fbs_runtime.application_context.PyQt6 import ApplicationContext
+from PyQt6.QtWidgets import QMainWindow
 
 import sys
 
 appctxt = ApplicationContext()       # 1. Instantiate ApplicationContext
 
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QKeySequence
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import QKeySequence
 
 class MainWindow(QMainWindow):
     def closeEvent(self, e):
@@ -80,10 +80,10 @@ def show_about_dialog():
        % appctxt.get_resource("icon.svg")
     about_dialog = QMessageBox(window)
     about_dialog.setText(text)
-    about_dialog.exec_()
+    about_dialog.exec()
 about_action.triggered.connect(show_about_dialog)
 
 window.show()
 
-exit_code = appctxt.app.exec_()      # 2. Invoke appctxt.app.exec_()
+exit_code = appctxt.app.exec()      # 2. Invoke appctxt.app.exec()
 sys.exit(exit_code)

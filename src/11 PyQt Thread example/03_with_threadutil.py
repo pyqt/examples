@@ -1,5 +1,5 @@
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
+from PyQt6.QtCore import *
+from PyQt6.QtWidgets import *
 from requests import Session
 from threading import Thread
 from threadutil import run_in_main_thread
@@ -40,4 +40,4 @@ message.returnPressed.connect(send_message)
 thread = Thread(target=fetch_new_messages, daemon=True)
 thread.start()
 
-app.exec_()
+app.exec()

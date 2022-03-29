@@ -11,8 +11,8 @@ It allows you to receive results from the function invocation:
 """
 
 from functools import wraps
-from PyQt5.QtCore import pyqtSignal, QObject, QThread
-from PyQt5.QtWidgets import QApplication
+from PyQt6.QtCore import pyqtSignal, QObject, QThread
+from PyQt6.QtWidgets import QApplication
 from threading import Event, get_ident
 
 def run_in_thread(thread_fn):

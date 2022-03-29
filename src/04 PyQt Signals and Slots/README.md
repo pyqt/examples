@@ -4,9 +4,9 @@ PyQt Signals let you react to user input such as mouse clicks. A *slot* is a fun
 
 <p align="center"><img src="../screenshots/pyqt-signals-and-slots.jpg" alt="PyQt Signals and Slots"></p>
 
-The code begins in the usual way. First, we import PyQt5 and create a `QApplication`:
+The code begins in the usual way. First, we import PyQt6 and create a `QApplication`:
 
-    from PyQt5.QtWidgets import *
+    from PyQt6.QtWidgets import *
     app = QApplication([])
 
 Next, we create a button:
@@ -18,7 +18,7 @@ Then we define a function. It will be called when the user clicks the button. Yo
     def on_button_clicked():
         alert = QMessageBox()
         alert.setText('You clicked the button!')
-        alert.exec_()
+        alert.exec()
 
 And here is where signals and slots come into play: We instruct Qt to invoke our function by _connecting_ it to the `.clicked` signal of our button:
 
@@ -27,6 +27,6 @@ And here is where signals and slots come into play: We instruct Qt to invoke our
 Finally, we show the button on the screen and hand control over to Qt:
 
     button.show()
-    app.exec_()
+    app.exec()
 
 For instructions how you can run this example yourself, please see [here](../../README.md#running-the-examples).

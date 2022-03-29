@@ -1,12 +1,12 @@
-# QVBoxLayout PyQt5
+# QVBoxLayout PyQt6
 
 Layouts let you position GUI elements next to each other. [`QVBoxLayout`](https://doc.qt.io/qt-5/qvboxlayout.html) for instance arranges items vertically:
 
-<p align="center"><img src="../screenshots/qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt5"></p>
+<p align="center"><img src="../screenshots/qvboxlayout-pyqt5.png" alt="QVBoxLayout PyQt6"></p>
 
-The [source code for this example](main.py) is not much more complex than for our [Hello World app](../01%20PyQt%20QLabel). First, we import PyQt5:
+The [source code for this example](main.py) is not much more complex than for our [Hello World app](../01%20PyQt%20QLabel). First, we import PyQt6:
 
-    from PyQt5.QtWidgets import *
+    from PyQt6.QtWidgets import *
 
 Then, we create the required `QApplication`:
 
@@ -34,7 +34,7 @@ Finally, we add the layout - and thus its contents - to the `window` we created 
 We conclude by showing the window and (as is required) handing control over to Qt:
 
     window.show()
-    app.exec_()
+    app.exec()
 
 For instructions how you can run this example yourself, please see [here](../../README.md#running-the-examples).
 

@@ -1,8 +1,8 @@
-# PyQt5 QListView
+# PyQt6 QListView
 
-This example shows how you can use a PyQt5 [`QListView`](https://doc.qt.io/qt-5/qlistview.html) to display a list.
+This example shows how you can use a PyQt6 [`QListView`](https://doc.qt.io/qt-5/qlistview.html) to display a list.
 
-<p align="center"><img src="../screenshots/pyqt5-qlistview.png" alt="PyQt5 QListView"></p>
+<p align="center"><img src="../screenshots/pyqt5-qlistview.png" alt="PyQt6 QListView"></p>
 
 It simply shows a static list of strings. Technically, the data is managed by Qt's [`QStringListModel`](https://doc.qt.io/qt-5/qstringlistmodel.html). The important steps of the [code](main.py) are:
 

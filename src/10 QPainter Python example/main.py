@@ -1,7 +1,7 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
-from PyQt5.QtMultimedia import QSound
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import *
+from PyQt6.QtCore import *
+from PyQt6.QtMultimedia import QSound
 
 class PlainTextEdit(QPlainTextEdit):
     def __init__(self):
@@ -100,4 +100,4 @@ def show_about_dialog():
 about_action.triggered.connect(show_about_dialog)
 
 window.show()
-app.exec_()
+app.exec()

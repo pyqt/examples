@@ -1,5 +1,5 @@
-from PyQt5 import uic
-from PyQt5.QtWidgets import QApplication
+from PyQt6 import uic
+from PyQt6.QtWidgets import QApplication
 
 Form, Window = uic.loadUiType("dialog.ui")
 
@@ -8,4 +8,4 @@ window = Window()
 form = Form()
 form.setupUi(window)
 window.show()
-app.exec_()
+app.exec()
