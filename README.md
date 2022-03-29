@@ -21,7 +21,7 @@ These PyQt examples show you how to create a desktop app with Python and Qt. Sta
 These examples are taken from the following book:
 
 <p align="center">
-    <a href="https://build-system.fman.io/pyqt6-book"><img src="https://build-system.fman.io/static/public/img/pyqt6-book.jpg" alt="PyQt6 book"></a>
+    <a href="https://build-system.fman.io/pyqt6-book"><img src="https://build-system.fman.io/static/public/img/pyqt5-book.jpg" alt="PyQt6 book"></a>
     <br/>
     <a href="https://build-system.fman.io/pyqt6-book">Python and Qt: The Best Parts</a>
     <br/>
