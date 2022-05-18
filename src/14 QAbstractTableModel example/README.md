@@ -31,12 +31,12 @@ class TableModel(QAbstractTableModel):
         # How many columns?
         return len(headers)
     def data(self, index, role):
-        if role != Qt.DisplayRole:
+        if role != Qt.ItemDataRole.DisplayRole:
             return QVariant()
         # What's the value of the cell at the given index?
         return rows[index.row()][index.column()]
     def headerData(self, section, orientation, role):
-        if role != Qt.DisplayRole or orientation != Qt.Horizontal:
+        if role != Qt.ItemDataRole.DisplayRole or orientation != Qt.Orientation.Horizontal:
             return QVariant()
         # What's the header for the given column?
         return headers[section]
