@@ -1,5 +1,5 @@
 from PyQt6.QtWidgets import *
-from PyQt6.QtGui import QKeySequence
+from PyQt6.QtGui import QKeySequence, QAction
 
 class MainWindow(QMainWindow):
     def closeEvent(self, e):
@@ -13,9 +13,9 @@ class MainWindow(QMainWindow):
         if answer & QMessageBox.Save:
             save()
             if text.document().isModified():
-            	# This happens when the user closes the Save As... dialog.
-            	# We do not want to close the window in this case because it
-            	# would throw away unsaved changes.
+                # This happens when the user closes the Save As... dialog.
+                # We do not want to close the window in this case because it
+                # would throw away unsaved changes.
                 e.ignore()
         elif answer & QMessageBox.Cancel:
             e.ignore()
@@ -37,7 +37,7 @@ def open_file():
         text.setPlainText(open(path).read())
         file_path = path
 open_action.triggered.connect(open_file)
-open_action.setShortcut(QKeySequence.Open)
+open_action.setShortcut(QKeySequence.StandardKey.Open)
 menu.addAction(open_action)
 
 save_action = QAction("&Save")
@@ -49,7 +49,7 @@ def save():
             f.write(text.toPlainText())
         text.document().setModified(False)
 save_action.triggered.connect(save)
-save_action.setShortcut(QKeySequence.Save)
+save_action.setShortcut(QKeySequence.StandardKey.Save)
 menu.addAction(save_action)
 
 save_as_action = QAction("Save &As...")
