@@ -73,7 +73,7 @@ class WidgetGallery(QDialog):
         self.createBottomRightGroupBox()
         self.createProgressBar()
 
-        styleComboBox.activated[str].connect(self.changeStyle)
+        styleComboBox.textActivated.connect(self.changeStyle)
         self.useStylePaletteCheckBox.toggled.connect(self.changePalette)
         disableWidgetsCheckBox.toggled.connect(self.topLeftGroupBox.setDisabled)
         disableWidgetsCheckBox.toggled.connect(self.topRightGroupBox.setDisabled)
@@ -128,7 +128,7 @@ class WidgetGallery(QDialog):
 
         checkBox = QCheckBox("Tri-state check box")
         checkBox.setTristate(True)
-        checkBox.setCheckState(Qt.PartiallyChecked)
+        checkBox.setCheckState(Qt.CheckState.PartiallyChecked)
 
         layout = QVBoxLayout()
         layout.addWidget(radioButton1)
@@ -136,7 +136,7 @@ class WidgetGallery(QDialog):
         layout.addWidget(radioButton3)
         layout.addWidget(checkBox)
         layout.addStretch(1)
-        self.topLeftGroupBox.setLayout(layout)    
+        self.topLeftGroupBox.setLayout(layout)
 
     def createTopRightGroupBox(self):
         self.topRightGroupBox = QGroupBox("Group 2")
@@ -160,8 +160,8 @@ class WidgetGallery(QDialog):
 
     def createBottomLeftTabWidget(self):
         self.bottomLeftTabWidget = QTabWidget()
-        self.bottomLeftTabWidget.setSizePolicy(QSizePolicy.Preferred,
-                QSizePolicy.Ignored)
+        self.bottomLeftTabWidget.setSizePolicy(QSizePolicy.Policy.Preferred,
+                QSizePolicy.Policy.Ignored)
 
         tab1 = QWidget()
         tableWidget = QTableWidget(10, 10)
@@ -195,7 +195,7 @@ class WidgetGallery(QDialog):
         self.bottomRightGroupBox.setChecked(True)
 
         lineEdit = QLineEdit('s3cRe7')
-        lineEdit.setEchoMode(QLineEdit.Password)
+        lineEdit.setEchoMode(QLineEdit.EchoMode.Password)
 
         spinBox = QSpinBox(self.bottomRightGroupBox)
         spinBox.setValue(50)
@@ -203,10 +203,10 @@ class WidgetGallery(QDialog):
         dateTimeEdit = QDateTimeEdit(self.bottomRightGroupBox)
         dateTimeEdit.setDateTime(QDateTime.currentDateTime())
 
-        slider = QSlider(Qt.Horizontal, self.bottomRightGroupBox)
+        slider = QSlider(Qt.Orientation.Horizontal, self.bottomRightGroupBox)
         slider.setValue(40)
 
-        scrollBar = QScrollBar(Qt.Horizontal, self.bottomRightGroupBox)
+        scrollBar = QScrollBar(Qt.Orientation.Horizontal, self.bottomRightGroupBox)
         scrollBar.setValue(60)
 
         dial = QDial(self.bottomRightGroupBox)
@@ -240,4 +240,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     gallery = WidgetGallery()
     gallery.show()
-    sys.exit(app.exec()) 
+    sys.exit(app.exec())
