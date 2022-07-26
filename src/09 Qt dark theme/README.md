@@ -12,7 +12,7 @@ As you can see in [`main.py`](main.py), this example uses `QApplication.setStyle
     # Now use a palette to switch to dark colors:
     palette = QPalette()
     palette.setColor(QPalette.Window, QColor(53, 53, 53))
-    palette.setColor(QPalette.WindowText, Qt.white)
+    palette.setColor(QPalette.WindowText, QColor('White'))
     ...
     app.setPalette(palette)
 
