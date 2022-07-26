@@ -1,5 +1,5 @@
 from PyQt6.QtWidgets import *
-from PyQt6.QtGui import QKeySequence, QAction
+from PyQt6.QtGui import QKeySequence
 
 class MainWindow(QMainWindow):
     def closeEvent(self, e):
