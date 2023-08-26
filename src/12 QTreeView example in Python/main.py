@@ -1,10 +1,11 @@
 from os.path import expanduser
-from PyQt6.QtWidgets import *
+from PySide6.QtWidgets import QApplication, QTreeView, QFileSystemModel
 
 home_directory = expanduser('~')
 
 app = QApplication([])
-model = QDirModel()
+model = QFileSystemModel()
+model.setRootPath(home_directory)
 view = QTreeView()
 view.setModel(model)
 view.setRootIndex(model.index(home_directory))
