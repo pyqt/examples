@@ -6,7 +6,7 @@ import sys
 appctxt = ApplicationContext()       # 1. Instantiate ApplicationContext
 
 from PyQt6.QtWidgets import *
-from PyQt6.QtGui import QKeySequence
+from PyQt6.QtGui import QKeySequence, QAction
 
 class MainWindow(QMainWindow):
     def closeEvent(self, e):
@@ -15,11 +15,11 @@ class MainWindow(QMainWindow):
         answer = QMessageBox.question(
             window, None,
             "You have unsaved changes. Save before closing?",
-            QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel
+            QMessageBox.StandardButton.Save | QMessageBox.StandardButton.Discard | QMessageBox.StandardButton.Cancel
         )
-        if answer & QMessageBox.Save:
+        if answer & QMessageBox.StandardButton.Save:
             save()
-        elif answer & QMessageBox.Cancel:
+        elif answer & QMessageBox.StandardButton.Cancel:
             e.ignore()
 
 text = QPlainTextEdit()
@@ -37,7 +37,7 @@ def open_file():
         text.setPlainText(open(path).read())
         file_path = path
 open_action.triggered.connect(open_file)
-open_action.setShortcut(QKeySequence.Open)
+open_action.setShortcut(QKeySequence.StandardKey.Open)
 menu.addAction(open_action)
 
 save_action = QAction("&Save")
@@ -49,7 +49,7 @@ def save():
             f.write(text.toPlainText())
         text.document().setModified(False)
 save_action.triggered.connect(save)
-save_action.setShortcut(QKeySequence.Save)
+save_action.setShortcut(QKeySequence.StandardKey.Save)
 menu.addAction(save_action)
 
 save_as_action = QAction("Save &As...")
