@@ -8,16 +8,17 @@ class MainWindow(QMainWindow):
         answer = QMessageBox.question(
             window, None,
             "You have unsaved changes. Save before closing?",
-            QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel
+            QMessageBox.StandardButton.Save | QMessageBox.StandardButton.Discard \
+                | QMessageBox.StandardButton.Cancel
         )
-        if answer & QMessageBox.Save:
+        if answer & QMessageBox.StandardButton.Save:
             save()
             if text.document().isModified():
                 # This happens when the user closes the Save As... dialog.
                 # We do not want to close the window in this case because it
                 # would throw away unsaved changes.
                 e.ignore()
-        elif answer & QMessageBox.Cancel:
+        elif answer & QMessageBox.StandardButton.Cancel:
             e.ignore()
 
 app = QApplication([])
