@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtCore import *
-from PyQt6.QtMultimedia import QSound
+from PyQt6.QtMultimedia import QSoundEffect
 
 class PlainTextEdit(QPlainTextEdit):
     def __init__(self):
@@ -9,12 +9,15 @@ class PlainTextEdit(QPlainTextEdit):
         self._holes = []
         self._bullet = QPixmap("bullet.png")
         size = self._bullet.size()
-        self._offset = QPoint(size.width() / 2, size.height() / 2)
+        self._offset = QPoint(size.width() // 2, size.height() // 2)
+        self.effect = QSoundEffect()
+        self.effect.setSource(QUrl.fromLocalFile("shot.wav"))
+        self.effect.setVolume(0.26)
     def mousePressEvent(self, e):
         self._holes.append(e.pos())
         super().mousePressEvent(e)
         self.viewport().update()
-        QSound.play("shot.wav")
+        self.effect.play()
     def paintEvent(self, e):
         super().paintEvent(e)
         painter = QPainter(self.viewport())
@@ -34,11 +37,12 @@ class MainWindow(QMainWindow):
         answer = QMessageBox.question(
             window, None,
             "You have unsaved changes. Save before closing?",
-            QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel
+            QMessageBox.StandardButton.Save | QMessageBox.StandardButton.Discard \
+                | QMessageBox.StandardButton.Cancel
         )
-        if answer & QMessageBox.Save:
+        if answer & QMessageBox.StandardButton.Save:
             save()
-        elif answer & QMessageBox.Cancel:
+        elif answer & QMessageBox.StandardButton.Cancel:
             e.ignore()
 
 app.setApplicationName("Text Editor")
@@ -56,7 +60,7 @@ def open_file():
         text.setPlainText(open(path).read())
         file_path = path
 open_action.triggered.connect(open_file)
-open_action.setShortcut(QKeySequence.Open)
+open_action.setShortcut(QKeySequence.StandardKey.Open)
 menu.addAction(open_action)
 
 save_action = QAction("&Save")
@@ -68,7 +72,7 @@ def save():
             f.write(text.toPlainText())
         text.document().setModified(False)
 save_action.triggered.connect(save)
-save_action.setShortcut(QKeySequence.Save)
+save_action.setShortcut(QKeySequence.StandardKey.Save)
 menu.addAction(save_action)
 
 save_as_action = QAction("Save &As...")
