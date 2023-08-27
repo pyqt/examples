@@ -1,4 +1,3 @@
 fbs
 PyQt6
-PySide6
 requests
