@@ -1,5 +1,5 @@
 from PyQt6.QtWidgets import *
-from PyQt6.QtGui import QKeySequence, QPalette, QColor
+from PyQt6.QtGui import QKeySequence, QPalette, QColor, QAction
 from PyQt6.QtCore import Qt
 
 app = QApplication([])
@@ -9,19 +9,19 @@ app.setStyle("Fusion")
 
 # Now use a palette to switch to dark colors:
 palette = QPalette()
-palette.setColor(QPalette.Window, QColor(53, 53, 53))
-palette.setColor(QPalette.WindowText, Qt.white)
-palette.setColor(QPalette.Base, QColor(25, 25, 25))
-palette.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
-palette.setColor(QPalette.ToolTipBase, Qt.white)
-palette.setColor(QPalette.ToolTipText, Qt.white)
-palette.setColor(QPalette.Text, Qt.white)
-palette.setColor(QPalette.Button, QColor(53, 53, 53))
-palette.setColor(QPalette.ButtonText, Qt.white)
-palette.setColor(QPalette.BrightText, Qt.red)
-palette.setColor(QPalette.Link, QColor(42, 130, 218))
-palette.setColor(QPalette.Highlight, QColor(42, 130, 218))
-palette.setColor(QPalette.HighlightedText, Qt.black)
+palette.setColor(QPalette.ColorRole.Window, QColor(53, 53, 53))
+palette.setColor(QPalette.ColorRole.WindowText, Qt.GlobalColor.white)
+palette.setColor(QPalette.ColorRole.Base, QColor(25, 25, 25))
+palette.setColor(QPalette.ColorRole.AlternateBase, QColor(53, 53, 53))
+palette.setColor(QPalette.ColorRole.ToolTipBase, Qt.GlobalColor.white)
+palette.setColor(QPalette.ColorRole.ToolTipText, Qt.GlobalColor.white)
+palette.setColor(QPalette.ColorRole.Text, Qt.GlobalColor.white)
+palette.setColor(QPalette.ColorRole.Button, QColor(53, 53, 53))
+palette.setColor(QPalette.ColorRole.ButtonText, Qt.GlobalColor.white)
+palette.setColor(QPalette.ColorRole.BrightText, Qt.GlobalColor.red)
+palette.setColor(QPalette.ColorRole.Link, QColor(42, 130, 218))
+palette.setColor(QPalette.ColorRole.Highlight, QColor(42, 130, 218))
+palette.setColor(QPalette.ColorRole.HighlightedText, Qt.GlobalColor.black)
 app.setPalette(palette)
 
 # The rest of the code is the same as for the "normal" text editor.
@@ -37,11 +37,12 @@ class MainWindow(QMainWindow):
         answer = QMessageBox.question(
             window, None,
             "You have unsaved changes. Save before closing?",
-            QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel
+            QMessageBox.StandardButton.Save | QMessageBox.StandardButton.Discard \
+                | QMessageBox.StandardButton.Cancel
         )
-        if answer & QMessageBox.Save:
+        if answer & QMessageBox.StandardButton.Save:
             save()
-        elif answer & QMessageBox.Cancel:
+        elif answer & QMessageBox.StandardButton.Cancel:
             e.ignore()
 
 window = MainWindow()
@@ -58,7 +59,7 @@ def open_file():
         text.setPlainText(open(path).read())
         file_path = path
 open_action.triggered.connect(open_file)
-open_action.setShortcut(QKeySequence.Open)
+open_action.setShortcut(QKeySequence.StandardKey.Open)
 menu.addAction(open_action)
 
 save_action = QAction("&Save")
@@ -70,7 +71,7 @@ def save():
             f.write(text.toPlainText())
         text.document().setModified(False)
 save_action.triggered.connect(save)
-save_action.setShortcut(QKeySequence.Save)
+save_action.setShortcut(QKeySequence.StandardKey.Save)
 menu.addAction(save_action)
 
 save_as_action = QAction("Save &As...")

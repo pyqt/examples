@@ -9,7 +9,7 @@ server = Session()
 # GUI:
 app = QApplication([])
 text_area = QPlainTextEdit()
-text_area.setFocusPolicy(Qt.NoFocus)
+text_area.setFocusPolicy(Qt.FocusPolicy.NoFocus)
 message = QLineEdit()
 layout = QVBoxLayout()
 layout.addWidget(text_area)
